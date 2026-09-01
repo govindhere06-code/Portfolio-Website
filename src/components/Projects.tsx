@@ -31,7 +31,7 @@ const projects: Project[] = [
       'Built custom Swiggy/Zomato scrapers to supplement API data.',
       'Vanilla HTML/CSS/JS frontend backed by Node.js + Express.js server. Deployed on Vercel.',
     ],
-    link: { label: 'Live Demo', href: '#' },
+    link: { label: 'Live Demo', href: 'https://dinewise-final-working-5dgj.vercel.app/' },
   },
 ];
 
