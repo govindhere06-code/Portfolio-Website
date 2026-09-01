@@ -19,7 +19,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: [0.25, 0.4, 0, 1] }}
+          transition={{ duration: 0.5, ease: [0.25, 0.4, 0, 1] as const }}
           className="relative pl-8 border-l-2 border-accent/20"
         >
           {/* Timeline dot */}

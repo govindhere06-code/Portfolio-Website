@@ -11,7 +11,7 @@ export default function SectionHeading({ number, title }: Props) {
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, ease: [0.25, 0.4, 0, 1] }}
+      transition={{ duration: 0.5, ease: [0.25, 0.4, 0, 1] as const }}
       className="flex items-center gap-4 mb-12"
     >
       <span className="font-mono text-xs text-accent">{number}</span>
