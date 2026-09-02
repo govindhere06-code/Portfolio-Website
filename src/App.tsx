@@ -5,12 +5,16 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import AwardsEducation from './components/AwardsEducation';
 import ContactLinks from './components/ContactLinks';
+import ThemeToggle from './components/ThemeToggle';
 
 export default function App() {
   return (
     <div className="flex min-h-screen bg-bg">
       {/* Sidebar */}
       <Sidebar />
+
+      {/* Theme toggle */}
+      <ThemeToggle />
 
       {/* Main content — offset on desktop by sidebar width */}
       <main className="flex-1 lg:ml-[260px] pt-14 lg:pt-0">

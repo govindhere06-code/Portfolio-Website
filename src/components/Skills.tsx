@@ -70,8 +70,8 @@ export default function Skills() {
                   <motion.span
                     key={item}
                     variants={pillVariants}
-                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[#0e1a2b] border border-[#1e3a5f] text-[#7dd3fc]
-                      hover:border-[#38bdf8]/50 hover:text-[#38bdf8] hover:bg-[#0c2d4a] transition-all duration-200 cursor-default"
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-accent-dim border border-accent/20 text-accent
+                      hover:border-accent/40 hover:bg-accent-glow transition-all duration-200 cursor-default"
                   >
                     {item}
                   </motion.span>

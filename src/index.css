@@ -18,6 +18,29 @@
   --color-accent-glow: rgba(34, 211, 238, 0.15);
 }
 
+/* === Light mode overrides === */
+html.light {
+  --color-bg: #f5f5f5;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f0f0f0;
+  --color-bg-sidebar: #fafafa;
+  --color-border: #e0e0e0;
+  --color-border-hover: #cccccc;
+  --color-text: #171717;
+  --color-text-muted: #525252;
+  --color-text-dim: #a3a3a3;
+  --color-accent: #0891b2;
+  --color-accent-dim: rgba(8, 145, 178, 0.08);
+  --color-accent-glow: rgba(8, 145, 178, 0.12);
+}
+
+/* Smooth theme transition */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* === Scrollbar === */
 ::-webkit-scrollbar {
   width: 6px;
@@ -61,6 +84,10 @@
   z-index: 0;
 }
 
+html.light .grid-bg::before {
+  background-image: radial-gradient(circle, rgba(8, 145, 178, 0.1) 1px, transparent 1px);
+}
+
 /* === Pulsing status dot === */
 @keyframes pulse-ring {
   0% { transform: scale(1); opacity: 0.5; }
@@ -87,3 +114,4 @@
   outline-offset: 2px;
   border-radius: 4px;
 }
+
