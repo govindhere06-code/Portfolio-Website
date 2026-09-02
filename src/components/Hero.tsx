@@ -20,7 +20,7 @@ const links = [
   },
   {
     label: 'Resume',
-    href: 'https://drive.google.com/file/d/1VM5W3y_Z7NPZYUlEOcPOw193cCjW31h6/preview',
+    href: 'https://drive.google.com/file/d/1VM5W3y_Z7NPZYUlEOcPOw193cCjW31h6/view?usp=sharing',
     icon: FileDown,
   },
 ];
